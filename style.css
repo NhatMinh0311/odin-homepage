@@ -1,0 +1,123 @@
+html {
+    font-size: 24px;
+}
+
+body {
+    > * {
+        margin-bottom: 20px;
+    }
+}
+
+header, footer {
+    background-color: rgb(3, 138, 192);
+}
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 20px 50px;
+    gap: 30px;
+    > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        > h1, h2 {
+            margin: 10px auto;
+        }
+    }
+}
+.social-icons {
+    height: 2rem;
+}
+
+main {
+    padding: 0 30px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.thumbnail {
+   > img {
+    width: 100%;
+   } 
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 12px;
+    overflow: hidden;
+    border-width: 0;
+}
+.card-title {
+    display: flex;
+    >h3 {
+        margin: 0 auto 0 0;
+    }
+    > div { 
+        display: flex;
+        gap: 12px;
+    }
+}
+
+.card-content {
+    margin: 5px 10px;
+}
+.project-links {
+    img {
+        height: 1.2rem;
+    }
+}
+
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 30px;
+    align-items: center;
+    > div {
+        margin-right: auto;
+        p {
+            margin: 15px 0;
+        }
+    }
+}
+
+.contact-infos {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.info-icons {
+    height: 1.5rem;;
+}
+
+a {
+    > img {
+        transition: transform 0.25s ease-in-out;
+    }
+
+    > img:hover {
+        transform: scale(1.4);
+    }
+}
+@media (max-width: 767px) {
+    header {
+        flex-wrap: wrap;
+        padding: 5px 15px;
+        gap: 0;
+    }
+
+    main {
+        padding: 0 15px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        padding: 15px;
+        gap: 12px;
+    }
+}
